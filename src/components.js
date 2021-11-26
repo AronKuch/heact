@@ -32,7 +32,7 @@ export const When = () => {
 
 const SectionData = (props) => {
   let returnHTML = "";
-  for (let i = 0; i <= props.number; i++) {
+  for (let i = 0; i < props.number; i++) {
     returnHTML += `<li key=${i}>${props.name} data will go here ${i}</li>`;
   }
   return ReactHtmlParser(returnHTML);
@@ -48,4 +48,9 @@ export const Section = (props) => {
       </ul>
     </div>
   );
+};
+
+export const Submit = () => {
+  // eventually do stuff
+  return <button>Submit (one day)</button>;
 };

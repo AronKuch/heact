@@ -1,5 +1,5 @@
 import React from "react";
-import { Settings, When, Section } from "./components.js";
+import { Settings, When, Section, Submit } from "./components.js";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Section name="Measurement" />
       <Section name="Food" />
       <Section name="Other" />
+      <Submit />
     </div>
   );
 }
