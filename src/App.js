@@ -1,9 +1,16 @@
-import "./App.css";
+import React from "react";
+import { Settings, When, Section } from "./components.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>Heact</h1>
+      <Settings />
+      <When />
+      <Section name="Medicine" />
+      <Section name="Symptom" />
+      <Section name="Measurement" />
+      <Section name="Food" />
+      <Section name="Other" />
     </div>
   );
 }
