@@ -2,11 +2,32 @@ import { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 
 export const Settings = () => {
-  return <div className="settings">Settings</div>;
+  return (
+    <div className="settings">
+      <h1>Settings</h1>
+    </div>
+  );
 };
 
 export const When = () => {
-  return <div className="when">Date -- Time</div>;
+  let now = new Date();
+  return (
+    <div className="when">
+      <input
+        type="date"
+        id="Date"
+        name="Date"
+        defaultValue={now.toISOString().substr(0, 10)}
+      />
+      &nbsp;|&nbsp;
+      <input
+        type="time"
+        id="Time"
+        name="Time"
+        defaultValue={now.toTimeString().substr(0, 5)}
+      />
+    </div>
+  );
 };
 
 const SectionData = (props) => {
