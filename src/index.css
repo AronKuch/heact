@@ -4,7 +4,10 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(75, 85, 100, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
 }
 
 code {
@@ -13,9 +16,26 @@ code {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+h1:hover {
+  text-decoration: underline;
 }
 
 li {
   list-style-type: none;
+}
+
+input {
+  display: inline-block;
+  width: 44%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px;
 }

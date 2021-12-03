@@ -19,7 +19,6 @@ export const When = () => {
         name="Date"
         defaultValue={now.toISOString().substr(0, 10)}
       />
-      &nbsp;|&nbsp;
       <input
         type="time"
         id="Time"
