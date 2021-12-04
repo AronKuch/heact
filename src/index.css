@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(75, 85, 100, 0.8);
+  background-color: #454568; /*https://coolors.co/454568-f1f1f5-ffc145-ff6b6c-514b23*/
+  color: #f1f1f5;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 18px;
+  font-weight: 300;
 }
 
 code {
@@ -16,7 +16,8 @@ code {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 1.33em;
+  font-weight: 600;
 }
 
 h1:hover {
@@ -29,13 +30,15 @@ li {
 
 input {
   display: inline-block;
-  width: 44%;
+  width: 43%;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 18px;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 button {
-  font-size: 18px;
-  padding: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 6px;
 }
