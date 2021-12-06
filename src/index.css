@@ -45,11 +45,23 @@ li {
 
 input {
   display: inline-block;
-  width: 46%;
-  margin-left: 2%;
-  margin-right: 2%;
   font-size: inherit;
   font-family: inherit;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+input[type="text"] {
+  width: 40%;
+}
+
+input[type="number"] {
+  width: 15%;
+  -moz-appearance: textfield;
+}
+
+input.whenput {
+  width: 46%;
 }
 
 button {

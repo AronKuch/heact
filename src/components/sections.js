@@ -1,5 +1,5 @@
-import { useState } from "react";
-// import ReactHtmlParser from "react-html-parser";
+import React, { useState } from "react";
+import SectionData from "./details.js";
 
 export const Settings = () => {
   return (
@@ -17,43 +17,18 @@ export const When = () => {
         type="date"
         id="Date"
         name="Date"
+        class="whenput"
         defaultValue={now.toISOString().substr(0, 10)}
       />
       <input
         type="time"
         id="Time"
         name="Time"
+        class="whenput"
         defaultValue={now.toTimeString().substr(0, 5)}
       />
     </div>
   );
-};
-
-const DataSelector = (props) => {
-  switch (props.name) {
-    case "Medicine":
-      return <>Drug data will go here {props.number} times.</>;
-    case "Symptom":
-      return <>What she's feeling will go here {props.number} times.</>;
-    case "Measurement":
-      return <>What data she's producing will go here.</>;
-    case "Food":
-      return <>What she's been eating will go here {props.number} times.</>;
-    default:
-      return <>Generic data will go here.</>;
-  }
-};
-
-const SectionData = (props) => {
-  let listItems = [];
-  for (let i = 0; i < props.number; i++) {
-    listItems.push(
-      <li key={i}>
-        <DataSelector name={props.name} number={i} />
-      </li>
-    );
-  }
-  return listItems;
 };
 
 // Generic component to layout each type of data being collected.
