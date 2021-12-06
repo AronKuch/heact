@@ -1,5 +1,5 @@
 import React from "react";
-import { Settings, When, Section, Submit } from "./components.js";
+import { Settings, When, Section, Submit } from "./components/sections.js";
 
 function App() {
   return (

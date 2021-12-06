@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -18,19 +27,25 @@ code {
 h1 {
   font-size: 1.33em;
   font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.25em;
+  padding-top: 1em;
 }
 
 h1:hover {
   text-decoration: underline;
 }
-
+ul {
+  padding-left: 0;
+  margin: 0;
+}
 li {
   list-style-type: none;
 }
 
 input {
   display: inline-block;
-  width: 43%;
+  width: 46%;
   margin-left: 2%;
   margin-right: 2%;
   font-size: inherit;

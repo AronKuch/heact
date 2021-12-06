@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactHtmlParser from "react-html-parser";
+// import ReactHtmlParser from "react-html-parser";
 
 export const Settings = () => {
   return (
@@ -29,14 +29,34 @@ export const When = () => {
   );
 };
 
-const SectionData = (props) => {
-  let returnHTML = "";
-  for (let i = 0; i < props.number; i++) {
-    returnHTML += `<li key=${i}>${props.name} data will go here ${i}</li>`;
+const DataSelector = (props) => {
+  switch (props.name) {
+    case "Medicine":
+      return <>Drug data will go here {props.number} times.</>;
+    case "Symptom":
+      return <>What she's feeling will go here {props.number} times.</>;
+    case "Measurement":
+      return <>What data she's producing will go here.</>;
+    case "Food":
+      return <>What she's been eating will go here {props.number} times.</>;
+    default:
+      return <>Generic data will go here.</>;
   }
-  return ReactHtmlParser(returnHTML);
 };
 
+const SectionData = (props) => {
+  let listItems = [];
+  for (let i = 0; i < props.number; i++) {
+    listItems.push(
+      <li key={i}>
+        <DataSelector name={props.name} number={i} />
+      </li>
+    );
+  }
+  return listItems;
+};
+
+// Generic component to layout each type of data being collected.
 export const Section = (props) => {
   let [number, setStatus] = useState(0);
   return (
