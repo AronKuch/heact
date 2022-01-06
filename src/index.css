@@ -12,6 +12,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #454568; /*https://coolors.co/454568-f1f1f5-ffc145-ff6b6c-514b23*/
+  /* May want to consider Veri Peri 6667AB, the Pantone color of the year for 2022 */
   color: #f1f1f5;
   padding-left: 10px;
   padding-right: 10px;
@@ -60,8 +61,20 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+div.when {
+  display: flex;
+  justify-content: space-between;
+}
+
 input.whenput {
-  width: 46%;
+  width: 40%;
+}
+
+textarea {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 4em;
 }
 
 button {

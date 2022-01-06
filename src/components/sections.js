@@ -17,14 +17,14 @@ export const When = () => {
         type="date"
         id="Date"
         name="Date"
-        class="whenput"
+        className="whenput"
         defaultValue={now.toISOString().substr(0, 10)}
       />
       <input
         type="time"
         id="Time"
         name="Time"
-        class="whenput"
+        className="whenput"
         defaultValue={now.toTimeString().substr(0, 5)}
       />
     </div>
